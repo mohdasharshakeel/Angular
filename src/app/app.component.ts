@@ -6,10 +6,22 @@ import { ProfileComponent } from "./profile/profile.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, SingupComponent, ProfileComponent],
+  imports: [RouterOutlet, ProfileComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Angular Course';
+  handleClick() {
+    alert('Button clicked!');
+    this.otherFunction();
+  }
+
+  otherFunction() {
+    console.log('This is another function.');
+  }
+
+  sum(num1: number, num2: number) {
+    console.log(num1 + num2);
+  }
 }
