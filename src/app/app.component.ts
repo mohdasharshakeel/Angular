@@ -3,10 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SingupComponent } from "./singup/singup.component";
 import { ProfileComponent } from "./profile/profile.component";
+import { LectureeventComponent } from "./lectureevent/lectureevent.component";
+import { LecturetenComponent } from "./lectureten/lectureten.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ProfileComponent],
+  imports: [RouterOutlet, ProfileComponent, LectureeventComponent, LecturetenComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
